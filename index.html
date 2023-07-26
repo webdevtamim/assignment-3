@@ -3,8 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
     <title>Fruit Brust</title>
-    <!-- font -->
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/f8d5f40f21.js" crossorigin="anonymous"></script>
+    <!-- Lato font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
     <!-- daisyUI & tailwindcss -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -15,14 +21,67 @@
             extend: {
               colors: {
                 clifford: '#da373d',
+                'primary-bg': '#F85559',
+                'search-text': 'rgba(18, 18, 18, 0.40)',
+                'primary-text-color': '#121212',
+                'secondary-text-color': 'rgba(18, 18, 18, 0.60)',
               }
             }
           }
         }
       </script>
-    <style></style>
+    <style>
+      #special-input:focus{
+        outline: none !important;
+      }
+    </style>
 </head>
-<body>
-    
+<body class="bg-white h-screen">
+    <header class="max-w-[1440px] mx-auto pt-5 md:pt-12">
+      <!-- navbar -->
+      <nav class="navbar md:bg-primary-bg text-primary-text-color md:text-white px-5 md:px-9 md:py-5 rounded-full">
+        <div class="navbar-start hidden md:flex">
+          <ul class="menu menu-horizontal px-0 text-lg font-medium">
+            <li><a class="hover:text-white hover:bg-transparent active:text-white active:bg-transparent">Home</a></li>
+            <li><a class="hover:text-white hover:bg-transparent active:text-white active:bg-transparent">About Us</a></li>
+            <li><a class="hover:text-white hover:bg-transparent active:text-white active:bg-transparent">Shop</a></li>
+            <li><a class="hover:text-white hover:bg-transparent active:text-white active:bg-transparent">All Fruits</a></li>
+          </ul>
+        </div>
+        <div class="navbar-start md:navbar-center">
+          <a class="md:mx-auto flex md:flex items-center space-x-2 md:space-x-4" href="index.html">
+            <img class="w-8 md:w-14" src="images/logo.png" alt="logo">
+            <span class="normal-case text-xl md:text-4xl font-bold">Fruit Burst</span>
+          </a>
+        </div>
+        <div class="navbar-end">
+          <div class="form-control hidden md:block">
+            <div class="flex items-center bg-white rounded-full pr-7 pl-5">
+              <input id="special-input" type="text" placeholder="Search here" class="text-search-text bg-white input w-24 md:w-auto pb-6 pt-5"/>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-[#121212]">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+              </svg>
+            </div>
+          </div>
+          <div class="dropdown md:hidden w-full">
+            <label tabindex="0" class="float-right p-0 btn btn-ghost md:hidden hover:bg-transparent">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-8 h-8">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+            </label>
+            <ul tabindex="0" class="text-lg font-medium menu menu-md dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box absolute right-0 top-8 bg-white">
+              <li><a class="hover:text-primary-text-color hover:bg-transparent active:text-primary-text-color active:bg-transparent">Home</a></li>
+              <li><a class="hover:text-primary-text-color hover:bg-transparent active:text-primary-text-color active:bg-transparent">About Us</a></li>
+              <li><a class="hover:text-primary-text-color hover:bg-transparent active:text-primary-text-color active:bg-transparent">Shop</a></li>
+              <li><a class="hover:text-primary-text-color hover:bg-transparent active:text-primary-text-color active:bg-transparent">All Fruits</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- banner -->
+      <div class="banner">hfdh</div>
+    </header>
+    <main></main>
+    <footer></footer>
 </body>
 </html>
