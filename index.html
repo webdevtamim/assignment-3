@@ -37,7 +37,7 @@
     </style>
 </head>
 <body class="bg-white">
-    <header class="max-w-[1440px] mx-auto pt-5 md:pt-12 md:px-5">
+    <header class="max-w-[1460px] mx-auto pt-5 md:pt-12 md:px-5">
       <!-- navbar -->
       <nav class="navbar md:bg-primary-bg text-primary-text-color md:text-white px-5 md:px-9 md:py-5 rounded-full">
         <div class="navbar-start hidden md:flex">
@@ -196,40 +196,142 @@
 
     <main>
       <!-- Deal of the day -->
-      <section class="deal">
-        <div class="flex justify-between items-center">
-          <div class="space-y-6">
-            <h3 class="text-primary-text-color text-5xl font-extrabold">Deal of the day</h3>
-            <p class="text-base font-medium text-secondary-text-color w-[615px]">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+      <section class="deal max-w-[1460px] mx-auto px-5 pt-20 pb-36">
+        <div class="flex flex-col	md:flex-row justify-between items-center">
+          <div class="space-y-4 md:space-y-6 text-center md:text-left pb-10">
+            <h3 class="text-primary-text-color text-xl md:text-5xl font-extrabold">Deal of the day</h3>
+            <p class="text-sm md:text-base font-medium text-secondary-text-color w-[270px] md:w-[615px]">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
           </div>
-          <div>
-            <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
-              <div class="flex flex-col">
-                <span class="countdown font-mono text-primary-text-color text-5xl font-extrabold">
-                  <span style="--value:29;"></span>
-                </span>
-                <span class="text-base font-medium text-secondary-text-color w-[615px]">Days</span>
-              </div> :
-              <div class="flex flex-col">
-                <span class="countdown font-mono text-primary-text-color text-5xl font-extrabold">
-                  <span style="--value:15;"></span>
-                </span>
-                <span class="text-base font-medium text-secondary-text-color w-[615px]">Hours</span>
-              </div> :
-              <div class="flex flex-col">
-                <span class="countdown font-mono text-primary-text-color text-5xl font-extrabold">
-                  <span style="--value:25;"></span>
-                </span>
-                <span class="text-base font-medium text-secondary-text-color w-[615px]">Minutes</span>
-              </div> :
-              <div class="flex flex-col">
-                <span class="countdown font-mono text-primary-text-color text-5xl font-extrabold">
-                  <span style="--value:8;"></span>
-                </span>
-                <span class="text-base font-medium text-secondary-text-color w-[615px]">Seconds</span>
+          <div class="grid grid-flow-col gap-3 md:gap-6 text-center auto-cols-max">
+            <div class="flex flex-col gap-y-2">
+              <span class="countdown font-mono text-primary-text-color text-3xl md:text-5xl font-extrabold">
+                <span style="--value:29;"></span>
+              </span>
+              <span class="text-xs md:text-base font-medium text-secondary-text-color">Days</span>
+            </div>
+            <div class="pt-1 md:pt-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M12 6.75C11.8011 6.75 11.6103 6.67098 11.4697 6.53033C11.329 6.38968 11.25 6.19891 11.25 6C11.25 5.80109 11.329 5.61032 11.4697 5.46967C11.6103 5.32902 11.8011 5.25 12 5.25C12.1989 5.25 12.3897 5.32902 12.5303 5.46967C12.671 5.61032 12.75 5.80109 12.75 6C12.75 6.19891 12.671 6.38968 12.5303 6.53033C12.3897 6.67098 12.1989 6.75 12 6.75ZM12 12.75C11.8011 12.75 11.6103 12.671 11.4697 12.5303C11.329 12.3897 11.25 12.1989 11.25 12C11.25 11.8011 11.329 11.6103 11.4697 11.4697C11.6103 11.329 11.8011 11.25 12 11.25C12.1989 11.25 12.3897 11.329 12.5303 11.4697C12.671 11.6103 12.75 11.8011 12.75 12C12.75 12.1989 12.671 12.3897 12.5303 12.5303C12.3897 12.671 12.1989 12.75 12 12.75ZM12 18.75C11.8011 18.75 11.6103 18.671 11.4697 18.5303C11.329 18.3897 11.25 18.1989 11.25 18C11.25 17.8011 11.329 17.6103 11.4697 17.4697C11.6103 17.329 11.8011 17.25 12 17.25C12.1989 17.25 12.3897 17.329 12.5303 17.4697C12.671 17.6103 12.75 17.8011 12.75 18C12.75 18.1989 12.671 18.3897 12.5303 18.5303C12.3897 18.671 12.1989 18.75 12 18.75Z" stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="flex flex-col gap-y-2">
+              <span class="countdown font-mono text-primary-text-color text-3xl md:text-5xl font-extrabold">
+                <span style="--value:15;"></span>
+              </span>
+              <span class="text-xs md:text-base font-medium text-secondary-text-color">Hours</span>
+            </div>
+            <div class="pt-1 md:pt-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M12 6.75C11.8011 6.75 11.6103 6.67098 11.4697 6.53033C11.329 6.38968 11.25 6.19891 11.25 6C11.25 5.80109 11.329 5.61032 11.4697 5.46967C11.6103 5.32902 11.8011 5.25 12 5.25C12.1989 5.25 12.3897 5.32902 12.5303 5.46967C12.671 5.61032 12.75 5.80109 12.75 6C12.75 6.19891 12.671 6.38968 12.5303 6.53033C12.3897 6.67098 12.1989 6.75 12 6.75ZM12 12.75C11.8011 12.75 11.6103 12.671 11.4697 12.5303C11.329 12.3897 11.25 12.1989 11.25 12C11.25 11.8011 11.329 11.6103 11.4697 11.4697C11.6103 11.329 11.8011 11.25 12 11.25C12.1989 11.25 12.3897 11.329 12.5303 11.4697C12.671 11.6103 12.75 11.8011 12.75 12C12.75 12.1989 12.671 12.3897 12.5303 12.5303C12.3897 12.671 12.1989 12.75 12 12.75ZM12 18.75C11.8011 18.75 11.6103 18.671 11.4697 18.5303C11.329 18.3897 11.25 18.1989 11.25 18C11.25 17.8011 11.329 17.6103 11.4697 17.4697C11.6103 17.329 11.8011 17.25 12 17.25C12.1989 17.25 12.3897 17.329 12.5303 17.4697C12.671 17.6103 12.75 17.8011 12.75 18C12.75 18.1989 12.671 18.3897 12.5303 18.5303C12.3897 18.671 12.1989 18.75 12 18.75Z" stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="flex flex-col gap-y-2">
+              <span class="countdown font-mono text-primary-text-color text-3xl md:text-5xl font-extrabold">
+                <span style="--value:25;"></span>
+              </span>
+              <span class="text-xs md:text-base font-medium text-secondary-text-color">Minutes</span>
+            </div>
+            <div class="pt-1 md:pt-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M12 6.75C11.8011 6.75 11.6103 6.67098 11.4697 6.53033C11.329 6.38968 11.25 6.19891 11.25 6C11.25 5.80109 11.329 5.61032 11.4697 5.46967C11.6103 5.32902 11.8011 5.25 12 5.25C12.1989 5.25 12.3897 5.32902 12.5303 5.46967C12.671 5.61032 12.75 5.80109 12.75 6C12.75 6.19891 12.671 6.38968 12.5303 6.53033C12.3897 6.67098 12.1989 6.75 12 6.75ZM12 12.75C11.8011 12.75 11.6103 12.671 11.4697 12.5303C11.329 12.3897 11.25 12.1989 11.25 12C11.25 11.8011 11.329 11.6103 11.4697 11.4697C11.6103 11.329 11.8011 11.25 12 11.25C12.1989 11.25 12.3897 11.329 12.5303 11.4697C12.671 11.6103 12.75 11.8011 12.75 12C12.75 12.1989 12.671 12.3897 12.5303 12.5303C12.3897 12.671 12.1989 12.75 12 12.75ZM12 18.75C11.8011 18.75 11.6103 18.671 11.4697 18.5303C11.329 18.3897 11.25 18.1989 11.25 18C11.25 17.8011 11.329 17.6103 11.4697 17.4697C11.6103 17.329 11.8011 17.25 12 17.25C12.1989 17.25 12.3897 17.329 12.5303 17.4697C12.671 17.6103 12.75 17.8011 12.75 18C12.75 18.1989 12.671 18.3897 12.5303 18.5303C12.3897 18.671 12.1989 18.75 12 18.75Z" stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="flex flex-col gap-y-2">
+              <span class="countdown font-mono text-primary-text-color text-3xl md:text-5xl font-extrabold">
+                <span style="--value:8;"></span>
+              </span>
+              <span class="text-xs md:text-base font-medium text-secondary-text-color">Seconds</span>
+            </div>
+          </div>
+        </div>
+        <div class="card-container grid grid-cols-1 md:grid-cols-4	gap-6 py-12">
+          <div class="card hover:shadow-lg duration-500 border-2 border-solid border-[rgba(18, 18, 18, 0.10)] px-5">
+            <figure class="px-10 pt-10">
+              <img src="/images/fruit6.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title text-primary-text-color text-2xl font-semibold pb-5 pt-5">12.90$ - 18.85$</h2>
+              <hr style="border-top-width: 2px;" class="pb-6 border-solid  border-solid border-[rgba(18, 18, 18, 0.10)] w-full">
+              <p class="text-secondary-text-color text-base font-medium">Apples</p>
+              <div class="rating rating-lg space-x-3 pt-5 pb-5 w-full flex justify-center">
+                <input type="radio" name="rating-9" class="rating-hidden" />
+                <input type="radio" name="rating-9" class="bg-primary-bg mask mask-star-2" />
+                <input type="radio" name="rating-9" class="bg-primary-bg mask mask-star-2" checked />
+                <input type="radio" name="rating-9" class="bg-primary-bg mask mask-star-2" />
+                <input type="radio" name="rating-9" class="bg-primary-bg mask mask-star-2" />
+                <input type="radio" name="rating-9" class="bg-primary-bg mask mask-star-2" />
+              </div>
+              <div class="card-actions">
+                <button class="btn btn-primary bg-transparent border-0 text-primary-bg text-base font-bold hover:bg-transparent">Details</button>
               </div>
             </div>
           </div>
+          <div class="card hover:shadow-lg duration-500 border-2 border-solid border-[rgba(18, 18, 18, 0.10)] px-5">
+            <figure class="px-10 pt-10">
+              <img src="/images/fruit7.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title text-primary-text-color text-2xl font-semibold pb-5 pt-5">12.90$ - 18.85$</h2>
+              <hr style="border-top-width: 2px;" class="pb-6 border-solid  border-solid border-[rgba(18, 18, 18, 0.10)] w-full">
+              <p class="text-secondary-text-color text-base font-medium">Orange</p>
+              <div class="rating rating-lg space-x-3 pt-5 pb-5 w-full flex justify-center">
+                <input type="radio" name="rating-8" class="rating-hidden" />
+                <input type="radio" name="rating-8" class="bg-primary-bg mask mask-star-2" />
+                <input type="radio" name="rating-8" class="bg-primary-bg mask mask-star-2" checked />
+                <input type="radio" name="rating-8" class="bg-primary-bg mask mask-star-2" />
+                <input type="radio" name="rating-8" class="bg-primary-bg mask mask-star-2" />
+                <input type="radio" name="rating-8" class="bg-primary-bg mask mask-star-2" />
+              </div>
+              <div class="card-actions">
+                <button class="btn btn-primary bg-transparent border-0 text-primary-bg text-base font-bold hover:bg-transparent">Details</button>
+              </div>
+            </div>
+          </div>
+          <div class="card hover:shadow-lg duration-500 border-2 border-solid border-[rgba(18, 18, 18, 0.10)] px-5">
+            <figure class="px-10 pt-10">
+              <img src="/images/fruit8.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title text-primary-text-color text-2xl font-semibold pb-5 pt-5">12.90$ - 18.85$</h2>
+              <hr style="border-top-width: 2px;" class="pb-6 border-solid  border-solid border-[rgba(18, 18, 18, 0.10)] w-full">
+              <p class="text-secondary-text-color text-base font-medium">Red Dragon</p>
+              <div class="rating rating-lg space-x-3 pt-5 pb-5 w-full flex justify-center">
+                <input type="radio" name="rating-7" class="rating-hidden" />
+                <input type="radio" name="rating-7" class="bg-primary-bg mask mask-star-2" />
+                <input type="radio" name="rating-7" class="bg-primary-bg mask mask-star-2" checked />
+                <input type="radio" name="rating-7" class="bg-primary-bg mask mask-star-2" />
+                <input type="radio" name="rating-7" class="bg-primary-bg mask mask-star-2" />
+                <input type="radio" name="rating-7" class="bg-primary-bg mask mask-star-2" />
+              </div>
+              <div class="card-actions">
+                <button class="btn btn-primary bg-transparent border-0 text-primary-bg text-base font-bold hover:bg-transparent">Details</button>
+              </div>
+            </div>
+          </div>
+          <div class="card hover:shadow-lg duration-500 border-2 border-solid border-[rgba(18, 18, 18, 0.10)] px-5">
+            <figure class="px-10 pt-10">
+              <img src="/images/fruit9.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title text-primary-text-color text-2xl font-semibold pb-5 pt-5">12.90$ - 18.85$</h2>
+              <hr style="border-top-width: 2px;" class="pb-6 border-solid  border-solid border-[rgba(18, 18, 18, 0.10)] w-full">
+              <p class="text-secondary-text-color text-base font-medium">Banana</p>
+              <div class="rating rating-lg space-x-3 pt-5 pb-5 w-full flex justify-center">
+                <input type="radio" name="rating-6" class="rating-hidden" />
+                <input type="radio" name="rating-6" class="bg-primary-bg mask mask-star-2" />
+                <input type="radio" name="rating-6" class="bg-primary-bg mask mask-star-2" checked />
+                <input type="radio" name="rating-6" class="bg-primary-bg mask mask-star-2" />
+                <input type="radio" name="rating-6" class="bg-primary-bg mask mask-star-2" />
+                <input type="radio" name="rating-6" class="bg-primary-bg mask mask-star-2" />
+              </div>
+              <div class="card-actions">
+                <button class="btn btn-primary bg-transparent border-0 text-primary-bg text-base font-bold hover:bg-transparent">Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center">
+          <button class="text-xl font-extrabold bg-primary-bg hover:bg-transparent hover:text-primary-bg hover:shadow-red-400 duration-500	 py-3 md:py-5 px-8 rounded-lg border-transparent hover:border-primary-bg border-2 border-solid text-white">Shop All</button>
         </div>
       </section>
 
