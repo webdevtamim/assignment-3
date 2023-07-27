@@ -2,7 +2,9 @@
     font-family: 'Lato', sans-serif;
   }
   .popup-1 .overlay,
-  .popup-2 .overlay{
+  .popup-2 .overlay,
+  .popup-3 .overlay,
+  .popup-4 .overlay{
     position: fixed;
     top: 0;
     left: 0;
@@ -13,7 +15,9 @@
     display: none;
   }
   .popup-1 .content,
-  .popup-2 .content{
+  .popup-2 .content,
+  .popup-3 .content,
+  .popup-4 .content{
     position: absolute;
     top: 20%;
     left: 50%;
@@ -25,11 +29,15 @@
     box-sizing: border-box;
   }
   .popup-1.active .overlay,
-  .popup-2.active .overlay{
+  .popup-2.active .overlay,
+  .popup-3.active .overlay,
+  .popup-4.active .overlay{
     display: block;
   }
   .popup-1.active .content,
-  .popup-2.active .content{
+  .popup-2.active .content,
+  .popup-3.active .content,
+  .popup-4.active .content{
     transition: all 300ms ease-in-out;
     transform: translate(-50%, -50%) scale(1);
   }
